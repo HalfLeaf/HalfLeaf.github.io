@@ -26,27 +26,21 @@ toc:
       -
         url: https://github.com/fan-lv
         text: 友链1:这是简介
-      - url: https://github.com/fan-lv
-        text: 友链2
-      - url: https://github.com/fan-lv
-        text: 友链3
+
 
 # Footer Settings
 # ---------------
-since: 2017
+since: 2020
 
 links:
   enable: true
   data:
     -
-      url: https://github.com/fan-lv
+      url: https://github.com/HalfLeaf
       text: GitHub
     -
-      url: mailto:15757856604@163.com
+      url: mailto:ye944205791@163.com
       text: E-Mail
-    -
-      url: tencent://message/?uin=1019593584&Site=&Menu=yes
-      text: QQ
 
 
 # busuanzi count for PV / UV in site
