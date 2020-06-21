@@ -1,5 +1,5 @@
 <p align="center" style="margin-bottom: 25px;">
-  <img src="./docs/.vuepress/public/favicon.ico">
+  <img src="../docs/.vuepress/public/favicon.ico">
 </p>
 
 我，现居杭州，就职于杭州海康威视数字技术股份有限公司，从事测试开发工作
@@ -24,5 +24,5 @@
 如果您有打赏的需求，请扫描下方的二维码随意打赏。您的支持将鼓励我继续创作:octocat:，金主daddy~，万岁！
 
 <p align="center">
-  <img src="./docs/.vuepress/public/pay.jpg" width="450">
+  <img src="../docs/.vuepress/public/pay.jpg" width="450">
 </p>
