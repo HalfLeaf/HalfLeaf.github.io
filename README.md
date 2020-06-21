@@ -24,5 +24,5 @@
 如果您有打赏的需求，请扫描下方的二维码随意打赏。您的支持将鼓励我继续创作:octocat:，金主daddy~，万岁！
 
 <p align="center">
-  <img src="/assert/pay.jpg" width="450">
+  <img src="pay.jpg" width="450">
 </p>
