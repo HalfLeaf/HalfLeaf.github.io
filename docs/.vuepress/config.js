@@ -6,24 +6,36 @@ module.exports = resolve({
     author: "半片叶",   // 文章显示的默认作者
     title: "半片叶 の 小窝 ~",
     description: " ☰ &emsp;&emsp;  潜龙在渊 &emsp;&emsp; 凤栖于巢 ",
-    // 内置搜索
-    search: true,
-    searchMaxSuggestions: 3,
-
     headOption: {
       icon: "/favicon.ico" , // 增加一个自定义的 favicon(网页标签的图标)
     },
     base: "/",
-    // 主题的多语言配置
-    locales: {
-      "/en/": {
-        title: "Half Leaf の Home ~",
-        description: "Strengthen myself, and wait for the right time ~ ",
-      },
-    },
+
     themeConfig: {
-      logo: "/favicon.ico", //导航栏的 logo 图片, 需填入绝对路径并放入 .vuepress/public 文件夹
-      sidebarDepth:2, // 侧边栏嵌套的标题深度
+      logo: "/favicon.ico",          // 导航栏的 logo 图片, 需填入绝对路径并放入 .vuepress/public 文件夹
+      sidebarDepth:2,               // 侧边栏嵌套的标题深度
+      displayAllHeaders:false,     // 显示所有页面的标题链接
+      activeHeaderLinks:true,     // 自动更新嵌套的标题链接和 URL 中的 Hash 值
+      search: true,              // 启用默认的搜索框
+      searchMaxSuggestions: 3,  // 搜索框显示的搜索结果数量
+      nextLinks:true,          // 所有页面的 下一篇 链接
+      nextLinks:true,         // 所有页面的 上一篇 链接
+      SEO: false,            // SEO 搜索
+      themeColor: {
+        blue: '#409eff',
+        red: '#f56c6c',
+        green: '#3eaf7c',
+        orange: '#fb9b5f',
+        purple: '#c888f6',
+        cyan: '#67c23a',
+      },
+      // 主题的多语言配置
+      locales: {
+        "/en/": {
+          title: "Half Leaf の Home ~",
+          description: "Strengthen myself, and wait for the right time ~ ",
+        },
+      },
       // 导航栏
       nav:[
         { text: '主页', link: '/', icon: '/assert/github.png' },
@@ -36,12 +48,12 @@ module.exports = resolve({
             { text: '前沿技术', link: '/advanced/', icon: 'markdown'},
           ]
         },
-        { text: '踩坑随记', link: '/solution/', icon: 'homefill' },
+        { text: '踩坑随记', link: '/solution/', icon: 'project' },
         { text: '收藏', link: '/collection/', icon: 'project' },
       ],
       // 侧边栏
       sidebar:[],
-
+      blog:false
     }
 })
 
