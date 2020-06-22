@@ -10,7 +10,6 @@ module.exports = resolve({
       icon: "/favicon.ico" , // 增加一个自定义的 favicon(网页标签的图标)
     },
     base: "/",
-
     themeConfig: {
       logo: "/favicon.ico",          // 导航栏的 logo 图片, 需填入绝对路径并放入 .vuepress/public 文件夹
       sidebarDepth:2,               // 侧边栏嵌套的标题深度
@@ -21,6 +20,10 @@ module.exports = resolve({
       nextLinks:true,          // 所有页面的 下一篇 链接
       nextLinks:true,         // 所有页面的 上一篇 链接
       SEO: false,            // SEO 搜索
+      // Markdown 增强
+      markdown:{
+        enableAll:true
+      },
       themeColor: {
         blue: '#409eff',
         red: '#f56c6c',
@@ -33,8 +36,21 @@ module.exports = resolve({
       locales: {
         "/en/": {
           title: "Half Leaf の Home ~",
-          description: "Strengthen myself, and wait for the right time ~ ",
-        },
+          nav:[
+            { text: 'Home', link: '/', icon: '/assert/github.png' },
+            { text: 'Notes', prefix: '/notes/', icon: 'project',
+              items: [
+                { text: 'Python', link: '/python/', icon: 'infofill' },
+                { text: 'Vue', link: '/vue/', icon: 'infofill' },
+                { text: 'Backend', link: '/backend/', icon: 'markdown' },
+                { text: 'Fontend', link: '/fontend/', icon: 'markdown' },
+                { text: 'Advanced', link: '/advanced/', icon: 'markdown'},
+              ]
+            },
+            { text: 'Solution', link: '/solution/', icon: 'project' },
+            { text: 'Collection', link: '/collection/', icon: 'project' },
+          ]
+        }
       },
       // 导航栏
       nav:[
