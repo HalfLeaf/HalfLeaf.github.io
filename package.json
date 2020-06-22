@@ -1,17 +1,24 @@
 {
-  "name": "githubPage",
+  "name": "github-page",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Half Leaf",
+  "license": "MIT",
+  "keywords": [
+    "vuepress",
+    "personal-blog"
+  ],
   "devDependencies": {
     "vuepress": "^1.5.2"
+  },
+  "dependencies": {
+    "typescript": "^3.9.5",
+    "vuepress-theme-hope": "^0.6.8"
   }
 }
