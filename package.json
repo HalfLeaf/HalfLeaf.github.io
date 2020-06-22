@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vuepress dev docs",
+    "cleanServe": "vuepress dev docs --no-cache",
     "build": "vuepress build docs"
   },
   "author": "Half Leaf",

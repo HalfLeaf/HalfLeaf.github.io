@@ -21,23 +21,28 @@ module.exports = resolve({
         description: "Strengthen myself, and wait for the right time ~ ",
       },
     },
+    themeConfig: {
+      logo: "/favicon.ico", //导航栏的 logo 图片, 需填入绝对路径并放入 .vuepress/public 文件夹
+      sidebarDepth:2, // 侧边栏嵌套的标题深度
+      // 导航栏
+      nav:[
+        { text: '主页', link: '/', icon: '/assert/github.png' },
+        { text: '学习笔记', prefix: '/study-note/', icon: 'project',
+          items: [
+            { text: 'python', link: '/python/', icon: 'infofill' },
+            { text: 'vue', link: '/vue/', icon: 'infofill' },
+            { text: '后端技能', link: '/backend/', icon: 'markdown' },
+            { text: '前端技术', link: '/fontend/', icon: 'markdown' },
+            { text: '前沿技术', link: '/advanced/', icon: 'markdown'},
+          ]
+        },
+        { text: '踩坑随记', link: '/solution/', icon: 'homefill' },
+        { text: '收藏', link: '/collection/', icon: 'project' },
+      ],
+      // 侧边栏
+      sidebar:[],
 
-    // 导航栏
-    nav:[
-      { text: '主页', link: '/', icon: 'homefill' },
-      { text: '学习笔记', prefix: '/study-note/', icon: 'homefill',
-        items: [
-          { text: 'python', link: '/python/', icon: 'infofill' },
-          { text: 'vue', link: '/vue/', icon: 'infofill' },
-          { text: '后端技能', link: '/backend/', icon: 'markdown' },
-          { text: '前端技术', link: '/fontend/', icon: 'markdown' },
-          { text: '前沿技术', link: '/advanced/', icon: 'markdown'yield},
-        ]
-      },
-      { text: '踩坑随记', link: '/solution/', icon: 'homefill' },
-      { text: '收藏', link: '/collection/', icon: 'homefill' },
-    ]
-  
+    }
 })
 
 
