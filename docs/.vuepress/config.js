@@ -5,7 +5,19 @@ module.exports = resolve({
     baseLang:'zh-CN',   // 主目录所对应的语言
     author: "半片叶",   // 文章显示的默认作者
     title: "半片叶 の 小窝 ~",
-    description: " ☰ &emsp;&emsp;  潜龙在渊 &emsp;&emsp; 凤栖于巢 ",
+    description: " ☰   潜龙在渊  凤栖于巢 ",
+    head: [
+      ["script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "https://cdn.staticfile.org/jquery/1.7.2/jquery.min.js"
+      }],
+      ["script", {
+        "language": "javascript",
+        "type": "text/javascript",
+        "src": "/js/MouseClickEffect.js"
+      }]
+    ],
     headOption: {
       icon: "/favicon.ico" , // 增加一个自定义的 favicon(网页标签的图标)
     },
@@ -33,44 +45,63 @@ module.exports = resolve({
         "/en/": {
           title: "Half Leaf の Home ~",
           nav:[
-            { text: 'Home', link: '/', icon: '/assert/github.png' },
-            { text: 'Notes', prefix: '/notes/', icon: 'project',
+            { text: 'Home', link: '/', icon: 'home-o' },
+            { text: 'Notes', prefix: '/notes/', icon: 'xuexibiji',
               items: [
-                { text: 'Python', link: '/python/', icon: 'infofill' },
-                { text: 'Vue', link: '/vue/', icon: 'infofill' },
-                { text: 'Backend', link: '/backend/', icon: 'markdown' },
-                { text: 'Fontend', link: '/fontend/', icon: 'markdown' },
-                { text: 'Advanced', link: '/advanced/', icon: 'markdown'},
+                { text: 'Vue', link: '/vue/', icon: 'vue' },
+                { text: 'Python', link: '/python/', icon: 'python' },
+                { text: 'Backend', link: '/backend/', icon: 'java' },
+                { text: 'Fontend', link: '/fontend/', icon: 'nodejsNodejsxingnengpingtai' },
+                { text: 'Advanced', link: '/advanced/', icon: 'advancedtransform'},
               ]
             },
-            { text: 'Solution', link: '/solution/', icon: 'project' },
-            { text: 'Collection', link: '/collection/', icon: 'project' },
-            { text: 'TimeLine', link: '/timeline/', icon: '/timeline.ico' },
+            { text: 'Solution', link: '/notes/solution/', icon: 'jiejuefangan' },
+            { text: 'Collection', link: '/notes/collection/', icon: 'shoucang' },
+            { text: 'TimeLine', link: '/timeline/', icon: 'shijian-xian' },
           ]
         }
       },
       // 导航栏
       nav:[
-        { text: '主页', link: '/', icon: '/assert/github.png' },
-        { text: '学习笔记', prefix: '/study-note/', icon: 'project',
+        { text: '主页', link: '/', icon: 'home-o' },
+        { text: '学习笔记', prefix: '/notes/', icon: 'xuexibiji',
           items: [
-            { text: 'python', link: '/python/', icon: 'infofill' },
-            { text: 'vue', link: '/vue/', icon: 'infofill' },
-            { text: '后端技能', link: '/backend/', icon: 'markdown' },
-            { text: '前端技术', link: '/fontend/', icon: 'markdown' },
-            { text: '前沿技术', link: '/advanced/', icon: 'icon-markdown'},
+            { text: 'vue', link: '/vue/', icon: 'vue' },
+            { text: 'python', link: '/python/', icon: 'python' },
+            { text: '后端技能', link: '/backend/', icon: 'java' },
+            { text: '前端技术', link: '/fontend/', icon: 'nodejsNodejsxingnengpingtai' },
+            { text: '前沿技术', link: '/advanced/', icon: 'advancedtransform'},
           ]
         },
-        { text: '踩坑随记', link: '/solution/', icon: 'project' },
-        { text: '收藏', link: '/collection/', icon: 'project' },
-        { text: '时间轴', link: '/timeline/', icon: 'icon-project' },
+        { text: '踩坑随记', link: '/notes/solution/', icon: 'jiejuefangan' },
+        { text: '收藏', link: '/notes/collection/', icon: 'shoucang' },
+        { text: '时间轴', link: '/timeline/', icon: 'shijian-xian' },
       ],
       // 侧边栏
       sidebar:[],
-      blog:false,
       // Markdown 增强
       markdown: {
         enableAll: true,
+      },
+      // 页面评论
+      comment: {
+        type: "valine",
+        appId: "VVjE3KAOY4mRq6SXauTfp0FG-gzGzoHsz",
+        appKey: "t7rtj1n7FGvchU6h5wEks9J8",
+      },
+      //博客首页
+      blog:{
+        avatar:"/imgs/logo.jpg",
+        name:"半片叶",
+        timeline:"",
+        intro:"/resume/",
+        blogNumShow:false,
+        links:{
+          Github: "https://github.com/HalfLeaf",
+          Gmail: "mailto:ye944205791@163.com",
+          'Gitee':  "https://gitee.com/lfye/projects",
+          'Leetcode': "https://leetcode-cn.com/u/half-leaf/"
+        }
       },
     }
 })

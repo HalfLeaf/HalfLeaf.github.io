@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "vuepress dev docs",
     "cleanServe": "vuepress dev docs --no-cache",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "postinstall": "patch-package"
   },
   "author": "Half Leaf",
   "license": "MIT",
@@ -19,7 +20,10 @@
     "vuepress": "^1.5.2"
   },
   "dependencies": {
+    "patch-package": "^6.2.2",
     "typescript": "^3.9.5",
+    "vue-property-decorator": "^9.0.0",
+    "vuepress-plugin-boxx": "0.0.7",
     "vuepress-theme-hope": "^0.6.8"
   }
 }

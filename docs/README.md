@@ -1,11 +1,11 @@
 ---
 home: true
-heroImage: /assert/logo.jpg
+heroImage: /imgs/logo.jpg
 heroText: null
 tagline: "☰    潜龙在渊    凤栖于巢"
 action:
   text: 进 窝~
-  link: /study-note/
+  link: /timeline/
 features:
   - title: Maybe (项目开发中~)
     details: 接口自测试框架，自动构建测试数据，生成测试用例，最大限度进行接口测试
