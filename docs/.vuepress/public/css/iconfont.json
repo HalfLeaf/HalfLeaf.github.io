@@ -48,11 +48,25 @@
       "unicode_decimal": 58626
     },
     {
+      "icon_id": "5758059",
+      "name": "segmentfault",
+      "font_class": "iconsf-copy",
+      "unicode": "e50d",
+      "unicode_decimal": 58637
+    },
+    {
       "icon_id": "5824504",
       "name": "sqlite",
       "font_class": "sqlite",
       "unicode": "e68c",
       "unicode_decimal": 59020
+    },
+    {
+      "icon_id": "6209708",
+      "name": "网易",
+      "font_class": "wangyi",
+      "unicode": "e503",
+      "unicode_decimal": 58627
     },
     {
       "icon_id": "6515439",
@@ -177,8 +191,8 @@
       "icon_id": "14428408",
       "name": "home",
       "font_class": "home-o",
-      "unicode": "e503",
-      "unicode_decimal": 58627
+      "unicode": "e504",
+      "unicode_decimal": 58628
     },
     {
       "icon_id": "14483544",
@@ -186,6 +200,13 @@
       "font_class": "rengongzhinengdanao",
       "unicode": "e618",
       "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "14560240",
+      "name": "码云",
+      "font_class": "mayun",
+      "unicode": "e507",
+      "unicode_decimal": 58631
     },
     {
       "icon_id": "14832758",

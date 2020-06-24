@@ -1,6 +1,5 @@
 const resolve = require("vuepress-theme-hope/resolve");
 
-
 module.exports = resolve({
     baseLang:'zh-CN',   // 主目录所对应的语言
     author: "半片叶",   // 文章显示的默认作者
@@ -84,24 +83,36 @@ module.exports = resolve({
         enableAll: true,
       },
       // 页面评论
-      comment: {
-        type: "valine",
-        appId: "VVjE3KAOY4mRq6SXauTfp0FG-gzGzoHsz",
-        appKey: "t7rtj1n7FGvchU6h5wEks9J8",
-      },
+      comment: false,
+      // {
+      //   type: "valine",
+      //   appId: "VVjE3KAOY4mRq6SXauTfp0FG-gzGzoHsz",
+      //   appKey: "t7rtj1n7FGvchU6h5wEks9J8",
+      // },
       //博客首页
       blog:{
         avatar:"/imgs/logo.jpg",
         name:"半片叶",
         timeline:"",
         intro:"/resume/",
-        blogNumShow:false,
+        numberShow:false,
         links:{
           Github: "https://github.com/HalfLeaf",
-          Gmail: "mailto:ye944205791@163.com",
-          'Gitee':  "https://gitee.com/lfye/projects",
-          'Leetcode': "https://leetcode-cn.com/u/half-leaf/"
-        }
+          Gitee:  "https://gitee.com/lfye/projects",
+          Leetcode: "https://leetcode-cn.com/u/half-leaf/",
+          BoKeYuan: "https://www.cnblogs.com/halfleaf/",
+          SegmentFault: "https://segmentfault.com/u/ye_clflover",
+          Zhihu: "https://www.zhihu.com/people/xie-wei-luo-2",
+          NeteaseEmail: "mailto:ye944205791@163.com",
+          Wechat: "/social/wechat/",
+        },
+        ProjectOption:[
+          {
+            type: 'project',
+            name: "Maybe",
+            link: "https://github.com/HalfLeaf/Maybe"
+          }
+        ]
       },
     }
 })
