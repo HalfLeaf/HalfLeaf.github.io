@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/config/articles/python.js"],"names":["NOTES"],"mappings":"kHAAA,iDAAMA,EAAQ","file":"js/chunk-2d0c4835.ee2390b8.js","sourcesContent":["const NOTES = []\r\nexport { NOTES };"],"sourceRoot":""}
