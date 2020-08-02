@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/config/articles/java.js"],"names":["NOTES"],"mappings":"mHAAA,iDAAMA,EAAQ","file":"js/chunk-74921c51.9d627c0d.js","sourcesContent":["const NOTES = []\r\nexport { NOTES };"],"sourceRoot":""}
